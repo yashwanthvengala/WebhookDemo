@@ -8,9 +8,9 @@ global with sharing class webhooksubcriptioncontroller {
             RestResponse response=RestContext.response;
             System.debug('response@@@:' +response);
 
-             String requestdata=request.headers.get('X-Hub-Signature-256');
-             System.debug('requestdata@@::' +requestdata);
-             Blob bb=request.requestBody;
+         //    String requestdata=request.headers.get('X-Hub-Signature-256');
+         //    System.debug('requestdata@@::' +requestdata);
+         //    Blob bb=request.requestBody;
              System.debug(bb.toString());
             JSONParser parser =JSON.createParser(request.requestBody.toString());
             System.debug('parser@@@@' +parser);
